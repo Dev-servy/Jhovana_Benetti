@@ -95,7 +95,7 @@
 
 
 
-  <section class="about" id="sobre">
+  <section class="hidden about" id="sobre">
     <div class="container">
       <div class="section-title" data-aos="">
         <h3 class="text-center fw-bold main-title">Sobre mim</h3>
@@ -118,7 +118,7 @@
     </div>
   </section>
 
-  <section class="skills" id="projetos">
+  <section class="hidden skills" id="projetos">
     <div class="container">
       <div class="row">
         <div class="skills-content">
@@ -141,7 +141,7 @@
         <p class="text-center fw-bold ms-4 ps-3 sub-title">Entre em contato</p>
       </div>
       <div class="row gx-5" data-aos="">
-        <div class="col-lg-6 text-center">
+        <div class="hidden col-lg-6 text-center">
           <div class="contact-bg d-flex flex-column justify-content-center rounded-2">
             <h5 class="py-3">Entre em contato conosco na caixa ao lado</h5>
             <div class="contact-info d-flex flex-column gap-2 text-center">
@@ -158,6 +158,31 @@
             </div>
           </div>
         </div>
+        <div class="hidden col-lg-6 mt-4">
+          <form action="https://formsubmit.co/holandanycollas@gmail.com" method="POST" class="form">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome e sobrenome" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Seu email pessoal ou de trabalho" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Proposta">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" name="message" placeholder="Fale mais sobre sua proposta" id="floatingTextarea" rows="8" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <button class="cssbuttons-io" type="submit">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path fill="currentColor" d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"></path>
+                </svg> Enviar
+              </span>
+            </button>
+          </form>
+        </div>        
       </div>
     </div>
   </section>
@@ -171,10 +196,6 @@
       </div>
     </div>
   </footer>
-
-  <div id="theme-toggle">
-    <ion-icon name="sunny-outline"></ion-icon>
-  </div>
 
   <div class="scroll-up-btn">
     <ion-icon name="arrow-up-circle-outline"></ion-icon>
@@ -194,7 +215,8 @@
   <!--JavaScript da página-->
   <script src="Navbar.js"></script>
   <script src="Tema.js"></script>
-  <script src="Cards.js"></script>
+  <script src="animacao.js"></script>
+
 
   <!--JS da animação da Página-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
